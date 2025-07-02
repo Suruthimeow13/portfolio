@@ -5,6 +5,8 @@ body {
   background-color: #F8F8FF;
   scroll-behavior: smooth;
   color: #1e1e1e;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 header {
@@ -38,6 +40,32 @@ header {
 .resume-btn:hover {
   color: #ffffff;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-end; /* <-- Align to right */
+    width: 100%;
+  }
+
+  .navbar nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* <-- Align links to the right */
+    width: 100%;
+  }
+
+  .navbar nav a {
+    margin: 8px 0;
+    text-align: right;
+  }
+
+  .resume-btn {
+    align-self: flex-end; /* <-- Align button to the right */
+    margin-top: 10px;
+  }
+}
+
 
 .resume-btn {
   background: #C792E9;
@@ -74,6 +102,21 @@ header {
   margin: 0;
   font-weight: 700;
 }
+
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 1.6em;
+  }
+
+  .tagline {
+    font-size: 0.9em;
+  }
+
+  .role-text {
+    font-size: 1em;
+  }
+}
+
 
 .typing {
   color: #FFD700;
@@ -225,6 +268,19 @@ html {
   margin-top: 30px;
 }
 
+@media (max-width: 600px) {
+  .skills-grid {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .skill-badge {
+    padding: 8px 14px;
+    font-size: 0.9em;
+  }
+}
+
+
 .skill-badge {
   display: inline-flex;
   align-items: center;
@@ -293,6 +349,26 @@ html {
   display: block;
   border-radius: 0; /* remove image rounding */
 }
+
+@media (max-width: 600px) {
+  .project-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-img img {
+    height: auto;
+  }
+
+  .project-details h3 {
+    font-size: 1.3em;
+  }
+
+  .project-details p {
+    font-size: 0.95em;
+  }
+}
+
 
 .project-details {
   flex: 1;
@@ -531,6 +607,14 @@ footer {
   padding: 20px;
   font-size: 0.95em;
 }
+
+@media (max-width: 480px) {
+  footer {
+    font-size: 0.85em;
+    padding: 16px;
+  }
+}
+
 
 /* Animations */
 @keyframes fadeInUp {

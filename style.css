@@ -152,8 +152,16 @@ header {
 }
 
 html {
-  scroll-padding-top: 80px; /* Adjust this to your header height */
+  scroll-behavior: smooth;
 }
+
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 140px;
+  }
+}
+
+
 
 /* Section Layout */
 .section {
@@ -341,6 +349,19 @@ html {
   border: 4px solid #C792E9;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 600px) {
+  .project-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-img img {
+    height: auto;
+    object-fit: cover;
+  }
+}
+
 
 .project-img img {
   width: 100%;

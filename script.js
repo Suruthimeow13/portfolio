@@ -1,7 +1,7 @@
 // Typing Effect
 const typingText = "Suruthivimal";
 let i = 0;
-const speed = 150;
+const speed = 100;
 
 function typeEffect() {
   if (i < typingText.length) {

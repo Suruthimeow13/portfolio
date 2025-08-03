@@ -61,3 +61,28 @@ const observer1 = new IntersectionObserver((entries, observer) => {
 });
 
 fadeIns.forEach(el => observer.observe(el));
+
+
+const line = document.getElementById("edu-line");
+const timeline = document.querySelector(".timeline");
+const boxes = document.querySelectorAll(".edu-box");
+
+// Line growth based on timeline height
+window.addEventListener("scroll", () => {
+  const rect = timeline.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
+  const scrollY = window.scrollY + windowHeight;
+  const timelineTop = rect.top + window.scrollY;
+
+  const maxHeight = timeline.scrollHeight;
+  const height = Math.min(scrollY - timelineTop, maxHeight);
+  line.style.height = height + "px";
+
+  // Fade-in effect
+  boxes.forEach((box) => {
+    const boxTop = box.getBoundingClientRect().top;
+    if (boxTop < window.innerHeight - 100) {
+      box.classList.add("visible");
+    }
+  });
+});

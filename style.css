@@ -416,7 +416,7 @@ html {
   }
 
   .project-img img {
-    height: 300px;
+    height: 200px;
   }
 
   .project-details h3 {
@@ -722,6 +722,7 @@ footer {
     margin-top: 10px;
   }
 }
+
 
 
 

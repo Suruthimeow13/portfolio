@@ -306,7 +306,66 @@ html {
   font-size: 1.1em;
 }
 
+/* Education section */
+.education-section {
+  background: #f7f9fc;
+  padding: 100px 20px;
+  position: relative;
+}
 
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  background-color: #313c44;
+  transform: translateX(-50%);
+  height: 0;
+  z-index: 0;
+}
+
+.edu-box {
+  background: white;
+  margin: 100px 0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 1;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.edu-box.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.edu-box h3{
+  color: #440061;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.edu-grade {
+  font-weight: bold;
+  color: #555;
+}
 
 /* Project Cards */
 .project-flex {
@@ -663,3 +722,4 @@ footer {
     margin-top: 10px;
   }
 }
+

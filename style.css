@@ -324,7 +324,7 @@ html {
   left: 50%;
   top: 0;
   width: 4px;
-  background-color: #313c44;
+  background-color: #C792E9;
   transform: translateX(-50%);
   height: 0;
   z-index: 0;
@@ -722,6 +722,7 @@ footer {
     margin-top: 10px;
   }
 }
+
 
 
 

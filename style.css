@@ -412,11 +412,11 @@ html {
 @media (max-width: 600px) {
   .project-img {
     width: 100%;
-    height: auto;
+    height: 200px;
   }
 
   .project-img img {
-    height: auto;
+    height: 200px;
   }
 
   .project-details h3 {
@@ -722,4 +722,5 @@ footer {
     margin-top: 10px;
   }
 }
+
 
